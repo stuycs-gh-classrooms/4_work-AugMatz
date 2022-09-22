@@ -1,0 +1,39 @@
+void setup(){
+size(400,400);
+background(200,100,100);
+}
+void draw(){
+  mondl(100,100);
+  mondl(170,170);
+  mondl(240,240);
+  mondl(310,310);
+}
+
+void mondl(int ccx , int ccy){
+stroke(0,200,240);
+int cx ;
+int cy ;
+cx = ccx -150;
+cy = ccy -150;
+
+
+// cyan
+fill(0,200,240);
+
+rect(cx+100,cy+60,100,100);
+
+
+//Blue
+fill(40,40,160);
+stroke(40,40,160);
+//nose
+triangle(cx+130,cy+105,cx+170,cy+105,cx+150,cy+130);
+
+rect(cx+110,cy+100,80,3);
+rect(cx+140,cy+130,20,3);
+
+line(cx+105,cy+120,cx+130,cy+120);
+line(cx+170,cy+120,cx+195,cy+120);
+
+
+}
